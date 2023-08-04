@@ -5,7 +5,7 @@ use rand::{Rng, RngCore};
 
 // 'byte[] xyz.cssxsh.mirai.tool.TLV544Provider.sign$fix_protocol_version(long, byte[])'
 #[no_mangle]
-pub extern "system" fn Java_xyz_cssxsh_mirai_tool_TLV544Provider_sign_00024fix_1protocol_1version(
+pub extern "system" fn Java_xyz_cssxsh_mirai_tool_TLV544Provider_sign(
     env: JNIEnv, _this: jclass, payload: jbyteArray,
 ) -> jbyteArray {
     let bytes = env.convert_byte_array(payload).unwrap();

@@ -18,3 +18,5 @@ features = ["std_rng"]
 [profile.release]
 lto = true
 codegen-units = 1
+
+# build 23/11/24
